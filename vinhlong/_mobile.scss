@@ -1,0 +1,194 @@
+.click-dropdown{
+	display: none;
+}
+@media screen and (max-width: 1024px){
+	.yeu{
+		display: none !important;
+	}
+	#topbar:not(first-child){
+		.top-menu{
+			display: inline-flex;
+			justify-content: flex-end;
+			li{
+				display: inline-flex;
+				align-items:center;
+
+				&:first-child{
+					width: 200px;
+				}
+				i{
+					margin-right: 3px;
+				}
+			}
+		}
+	}
+	.custom-slider{
+		.slider-wrapper{
+			height: 400px;
+		}
+	}
+}
+@media screen and (max-width: 991px){
+	#mainMenu nav>ul>li .dropdown-menu>li [class*=col-]>ul>li>a, #mainMenu nav>ul>li .dropdown-menu>li>a, #mainMenu nav>ul>li .dropdown-menu>li>span{
+		color: #fff !important;
+	}
+	.custom-slider{
+		.slider-wrapper{
+			height: 350px;
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	.sidebar{
+		display: none !important;
+	}
+	.custom-slider{
+		margin-top: 40px;
+		.slider-wrapper{
+			height: 300px;
+		}
+	}
+	#topbar:not(first-child){
+		.top-menu{
+			float: none;
+			li{
+				justify-content:center;
+			}
+		}
+	}
+	.nav-danhmuc{
+		background-image: none !important;
+
+		.link-danhmuc{
+			color: #000 !important;
+		}
+	}
+	.click-dropdown{
+		display: inline-block;
+		border: none !important;
+		background-color: transparent !important;
+		color: #000;
+		margin-top: -40px;
+		position: absolute;
+		right:0;
+	}
+	#page-content{
+		margin-top: 30px;
+	}
+	.fa-angle-down{
+	        display: none;
+	    }
+	.slogan{
+		display: none;
+	}
+	.slogan2{
+		width: 100%;
+		position: absolute;
+		display: block !important;
+		.img{
+			width: 100% !important;
+			float: none;
+			position: absolute;
+		}
+		.lienhe{
+			display: block;
+			.email{
+				z-index: 999;
+				p{margin:0}
+			}
+		}
+		.timkiem{
+			display: none;
+		}
+	}
+	.lienhemobile{
+		display: flex !important;
+		justify-content:flex-end;
+		.email{
+			margin: 0 50px 0 50px;
+		}
+	}
+	.panel-sp-index-3,.panel-sp-index-4{
+		.panel-heading{
+			flex-direction: column;
+			ul{
+				padding-left: 0;
+				li{
+					margin-left: 0;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	#header-wrap{
+		nav{
+			ul{
+				li{
+					ul{
+						li{
+							a{
+								color: #333 !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px){
+	.custom-slider{
+		.slider-wrapper{
+			height: 150px;
+		}
+	}
+	.lienhemobile{
+		display: flex !important;
+		justify-content:center;
+		.email{
+			margin: 0;
+		}
+
+	}
+	.make-color{
+		width: 250px !important;
+	}
+	#topbar:not(first-child){
+		.top-menu{
+			display: flex;
+			flex-direction: column;			
+			width: 100%;
+			li{
+				display: inline-flex;
+				align-items:center;
+				height: 30px;
+				&:first-child{
+					width: 100%;
+				}
+				i{
+					margin-right: 3px;
+				}
+			}
+		}
+	}
+	.panel-sp-index-3{
+		.panel-heading{
+			flex-direction: column;
+			ul{
+				padding-left: 0;
+				flex-direction: column;
+				li{
+					margin-left: 0;
+					border-bottom: 1px solid;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 380px){
+	.custom-slider{
+		.slider-wrapper{
+			height: 100px;
+		}
+	}
+}

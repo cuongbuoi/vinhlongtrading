@@ -1,0 +1,236 @@
+
+#topbar:first-child{
+	background-color: $green+50;
+	border-bottom: none;
+	.welcome{
+		height: 40px;
+		line-height: 40px;
+		color: #fff;
+	}
+}
+#topbar{
+	background-color: $green;
+	p,a,i,li{
+		color: #fff;
+	}
+	.top-menu{
+		float: right;
+	}
+}
+.slogan{
+	width: 100%;
+	height: 80px;
+	padding-top: 10px;
+	.img{
+		width: 300px;
+		float: left;
+		#hinh2{
+			display: none;
+			width: 15%;
+		}
+		.lienhemobile{
+			display: none ;
+			.email{
+				display: flex;
+				p{margin:0}
+				.giohang{
+				        border-bottom: none;
+				        border-left: no ne;
+				        i{
+				            font-size: 28px;
+			        	}
+				        .badge{
+				            background-color: $webtienich;
+				            top: 0;
+				            margin-top: -20px;
+				            margin-left: -10px;
+				        }
+			    	}  
+			}
+		}
+	}
+	.timkiem{
+		.btn:first-child{
+			background-color: #fff !important;
+			color: #000;
+			border:1px solid #eee;
+			height: 40px;
+		}
+		.form-control{
+			border-radius: 0;
+			border-color: #eee;
+			border-width: 1px;
+			height: 40px;
+			&:focus{
+				border: 1px solid $green;
+			}
+		}
+		.btn-search{
+			border-radius: 0;
+			color: #fff !important;
+			@include btn-linear(100%,42px);
+		}
+	}
+	.lienhe{
+		float: right;
+		display: flex;
+		.email{
+			display: flex;
+			p{margin:0}
+			.giohang{
+			        border-bottom: none;
+			        border-left: no ne;
+			        i{
+			            font-size: 28px;
+		        	}
+			        .badge{
+			            background-color: $green;
+			            top: 0;
+			            margin-top: -20px;
+			            margin-left: -10px;
+			        }
+		    	}  
+		}
+	}
+}
+.top-menu{
+	li{
+		margin-left: 10px;
+		a{
+			margin-right: 0 !important;
+			
+		}
+	}
+	.dangnhap{
+	        border-bottom: none;
+	        a{
+	            display: inline-block !important;
+	            font-weight: bold !important;
+	        }
+	    }
+	.giohang{
+	        border-bottom: none;
+	        border-left: no ne;
+	        i{
+	            font-size: 28px;
+        	}
+	        .badge{
+	            background-color: $webtienich;
+	            top: 0;
+	            margin-top: -20px;
+	            margin-left: -10px;
+	        }
+    	}  
+}
+.btn-search{
+	&:hover{
+		background-color: $orange +40;
+		border: 1px solid $orange;
+	}
+}
+header{
+	line-height: 50px !important;
+	height: 50px !important;
+	#header-wrap{
+		background-color: #fff !important;
+	}
+	.slogan2{
+	width: 100%;
+	height: 80px;
+	padding-top: 10px;
+	display: none;
+	.img{
+		width: 300px;
+		float: left;
+		#hinh2{
+			display: none;
+			width: 15%;
+		}
+		.lienhemobile{
+			display: none ;
+			.email{
+				display: flex;
+				p{margin:0}
+				.giohang{
+				        border-bottom: none;
+				        border-left: none;
+				        i{
+				            font-size: 28px;
+			        	}
+				        .badge{
+				            background-color: $webtienich;
+				            top: 0;
+				            margin-top: -20px;
+				            margin-left: -10px;
+				        }
+			    	}  
+			}
+		}
+	}
+	.timkiem{
+		.form-control{
+			border-radius: 0;
+			background-color:#EBEBEB;
+			&:focus{
+				border: 2px solid $green;
+			}
+		}
+		.btn{
+			border-radius: 0;
+			width: 100%;
+		}
+	}
+	.lienhe{
+		float: right;
+		display: flex;
+		.email{
+			display: flex;
+			p{margin:0}
+			.giohang{
+			        border-bottom: none;
+			        border-left: none;
+			        i{
+			            font-size: 28px;
+		        	}
+			        .badge{
+			            background-color: $green;
+			            top: 0;
+			            margin-top: -20px;
+			            margin-left: -10px;
+			        }
+		    	}  
+		}
+	}
+}
+#mainMenu{
+	nav{
+		ul{
+			li{
+				&.nav-danhmuc{
+					background-image: linear-gradient(to right,#0082cc, $green);
+					.link-danhmuc{
+						color: #fff;
+					}
+					ul{
+						border-radius: 0;
+						top: 55px;
+						li{
+							a{
+								font-weight: bold;
+							}
+						}
+					}
+				}
+				&.active{
+					a{
+						color: $green !important;
+					}
+				}
+				a{
+					color: #333;
+				}
+			}
+		}
+	}
+}	
+}

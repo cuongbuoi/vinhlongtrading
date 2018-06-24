@@ -1,0 +1,253 @@
+#page-content{
+	padding: 20px 0;
+}
+
+.sidebar:before{
+	border:none;
+}
+.panel-sp-index{
+	box-shadow: none;
+	.panel-heading{
+		text-align: center;
+	}
+	.panel-body{
+		.product{
+			border: 1px solid #ddd;
+			height: 380px;
+			padding: 15px;
+			.product-image{
+				@include img(100%,250px);
+			}
+			.product-price{
+				text-align: left;
+				width: 100%;
+				float: left;
+				margin-top: 0;
+				del{
+					float: right;
+					margin-top: 0;
+				}
+			}
+			.product-title{
+				height: 300px;
+			}
+		}
+	}
+}
+.tuychon{
+	border:none;
+	.widget{
+		.widget-title{
+			font-size: 18px;
+			margin-top: 4px;
+		}
+	}
+}
+.panel-sp-index-2{
+	box-shadow: none;
+	.panel-heading{
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+	}
+	.panel-body{
+		border:1px solid #eee;
+		.product{
+			height: 380px;
+			margin-bottom: 0;
+			.product-image{
+				@include img(100%,250px);
+			}
+			.product-price{
+				text-align: left;
+				width: 100%;
+				float: left;
+				margin-top: 0;
+				ins{
+					color: $green;
+				}
+				del{
+					float: right;
+					margin-top: 0;
+				}
+			}
+			.product-title{
+				height: 300px;
+			}
+		}
+	}
+}
+.panel-sp-index-3{
+	box-shadow: none;
+	.panel-heading{
+		display: flex;
+		justify-content: space-between;
+		ul{
+			display: flex;
+			li{
+				margin-left: 10px;
+				a{
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	.panel-body{
+		.product{
+			border: 1px solid #ddd;
+			height: 380px;
+			padding: 15px;
+			.product-image{
+				@include img(100%,250px);
+			}
+			.product-price{
+				text-align: left;
+				width: 100%;
+				float: left;
+				margin-top: 0;
+				del{
+					float: right;
+					margin-top: 0;
+				}
+				ins{
+					color: $green;
+				}
+			}
+			.product-title{
+				height: 300px;
+			}
+		}
+	}
+}
+.panel-sp-index-4{
+	box-shadow: none;
+	.panel-heading{
+		display: flex;
+		justify-content: space-between;
+		border: 1px solid #ddd;
+		border-bottom: none;
+		.col-md-4{
+			padding-top: 5px;
+		}
+	}
+	.panel-body{
+		border: 1px solid #ddd;
+		.product{
+			height: 380px;
+			.product-image{
+				@include img(100%,250px);
+			}
+			.product-price{
+				text-align: left;
+				width: 100%;
+				float: left;
+				margin-top: 0;
+				del{
+					float: right;
+					margin-top: 0;
+				}
+				ins{
+					color: $green;
+				}
+			}
+			.product-title{
+				height: 300px;
+			}
+		}
+	}
+}
+.client{
+	.carousel{
+		.img{
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			align-items:center;
+			justify-content:center;
+			width: 100%;
+			height: 130px;
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+}
+.custom-slider{
+	.slider-wrapper {
+		z-index: 500;
+		position: relative;
+		width: 100%;
+		height: 430px;
+		background: #FFF;
+		overflow: hidden;
+		margin-bottom: 0;
+		h2 {
+			color: #fff;
+			font-size: 2em;
+			font-weight: 400;
+			margin-bottom: 6px;
+		}
+		p {
+			font-weight: 300;
+			line-height: 1.4em;
+			color: #fff;
+		}
+		li {
+			display: none;
+			&:hover .caption {
+				-webkit-transform: translateY(0);
+				-ms-transform: translateY(0);
+				-o-transform: translateY(0);
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+		.current-slide {
+			display: block;
+		}
+		 img {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			top: 0;
+			left: 0;
+		}
+		.caption {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: rgba(0,0,0,0.65);
+			width: 100%;
+			padding: 10px;
+			color: #FFF;
+			-webkit-transform: translateY(100%);
+			-ms-transform: translateY(100%);
+			-o-transform: translateY(100%);
+			transform: translateY(100%);
+			opacity: 0;
+			-webkit-transition: all 0.4s ease;
+			-o-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+		}
+	}
+	.control-buttons {
+		text-align: center;
+	}
+
+	.control-buttons li {
+		cursor: pointer;
+		display: inline-block;
+		background: #424f66;
+		text-indent: -99999px;
+		height: 12px;
+		width: 12px;
+		margin: 0 6px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
+	}
+	.control-buttons li.active {
+		background: #00c5b9;
+	}
+}

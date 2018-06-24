@@ -1,0 +1,15 @@
+.btn{
+	text-shadow:none !important;
+}
+.btn-cart{
+	background-color: #fff;
+	border: 2px solid $green;
+	border-radius: 0;
+	color: $green;
+	transition: 0.3s;
+	&:hover{
+		background-color: $green;
+		border: 2px solid !important;
+		color: #fff;
+	}
+}

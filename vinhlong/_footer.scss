@@ -1,0 +1,63 @@
+#footer{
+    color: #fff !important;
+        .top-footer{
+            padding: 60px 0;
+            i{
+                color: #fff;
+            }
+            .bocongthuong{
+                width: 150px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .footer-content{
+            background-color: #09a91f;
+            h5,h4{
+                color: #fff;
+            }
+            p,a{
+                color: #fff;
+            }
+        }
+        .nhap-mail{
+        p{
+            font-style: italic;
+            color: #fff;
+        }
+        .btn-sendmail{
+            border: none;
+            margin: 0;
+            background-color: #c70000;
+            color: #fff;
+            transition: all 0.3s;
+            &:hover{
+                background-color: #c70000+20;
+            }
+        }
+    }
+
+}
+.copyright-content{
+    .ben-link{
+        color: $orange !important;
+    }
+    .webtienich{
+        color: $webtienich !important;
+    }
+}
+.ipfooter{
+    width: 100%;
+  .form-control{
+      border-radius: 0;
+      background-color:#EBEBEB;
+      width: 100%;
+      &:focus{
+        border: 2px solid $orange;
+      }
+    }
+    .btn{
+      border-radius: 0;
+    }
+}

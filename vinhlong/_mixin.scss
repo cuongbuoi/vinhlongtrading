@@ -1,0 +1,36 @@
+@mixin btn-linear($width, $height){
+	background-image: linear-gradient(to right,#0082cc, $green);
+	border-radius: 0;
+	color: #fff;
+	width: $width;
+	height: $height;
+	background-size: 300% 100%;
+	moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	&:hover{
+		background-position: 100% 0;
+		moz-transition: all .4s ease-in-out;
+		-o-transition: all .4s ease-in-out;
+		-webkit-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
+	}
+}
+@mixin img($width,$height){
+	position: relative;
+	width: $width;
+	height: $height;
+	float: left;
+	overflow: hidden;
+	img{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		height: 100%;
+		width: auto;
+		-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);		
+	}
+}
